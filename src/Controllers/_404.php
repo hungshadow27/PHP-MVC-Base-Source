@@ -1,5 +1,4 @@
 <?php
-
 class _404
 {
     use Controller;
