@@ -34,3 +34,11 @@ function getCurrentDateTime()
     $currentDateTime = $utcDateTime->format('Y-m-d H:i:s');
     return $currentDateTime;
 }
+function truncateString($str, $maxChars = 100, $holder = "...")
+{
+    if (strlen($str) > $maxChars) {
+        return trim(substr($str, 0, $maxChars)) . $holder;
+    } else {
+        return $str;
+    }
+}
